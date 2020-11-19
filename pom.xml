@@ -58,8 +58,20 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <!-- On spécifie la classe à exécuter -->        
+                    <mainClass>champollion.Main</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
-    </build>    
+        
+    </build>  
+    
+  
 
     <dependencies>
         <dependency>
@@ -77,4 +89,8 @@
         </dependency>
 
     </dependencies>
+    
 </project>
+
+        
+         
